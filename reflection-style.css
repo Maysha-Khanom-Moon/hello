@@ -1,0 +1,99 @@
+/* Reflection page specific */
+.reflection-section {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reflection-section h2 {
+  margin-bottom: 15px;
+}
+
+.reflection-section .form-group {
+  margin-bottom: 15px;
+}
+
+.reflection-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.reflection-section input[type="week"],
+.reflection-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.reflection-list {
+  margin-top: 30px;
+}
+
+.reflection-list h3 {
+  margin-bottom: 10px;
+}
+
+#reflections-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reflection-card {
+  background-color: #fff3e0;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reflection-card h4 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.reflection-card p {
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #666;
+}
+
+.success-msg {
+  color: #2e7d32;
+  margin-top: 15px;
+  text-align: center;
+  display: none;
+}
+
+/* edit reflection */
+.edit-reflection {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 5px;
+}
+
+.edit-reflection:hover {
+  background-color: darkorange;
+}
+
+@media (max-width: 600px) {
+  .reflection-section {
+    margin: 10px;
+    padding: 15px;
+  }
+}

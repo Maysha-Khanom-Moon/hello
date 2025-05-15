@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Planner - Reflection</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="reflection-style.css">
+  <link rel="stylesheet" href="dark-mode.css">
+</head>
+
+<body>
+  <header>
+    <h1>📚 Study Planner Dashboard</h1>
+    <button id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle Dark Mode">🌙</button>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
+      <li><a href="add.html">Add Task</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="reflection-section">
+      <h2>🖋️ Weekly Reflection</h2>
+      <form id="reflection-form">
+        <div class="form-group">
+          <label for="reflection-week">Week of</label>
+          <input type="week" id="reflection-week" required />
+        </div>
+        <div class="form-group">
+          <label for="reflection-text">Your Reflection</label>
+          <textarea id="reflection-text" rows="6" placeholder="Write about your week..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Save Reflection</button>
+      </form>
+      <p id="success-msg" class="success-msg">Reflection saved!</p>
+
+      <div class="reflection-list">
+        <h3>Past Reflections</h3>
+        <div id="reflections-container">
+          <!-- This will be rendered using javascript -->
+        </div>
+        <p id="no-reflections-msg" class="no-tasks">No reflections yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2025 Study Planner App - Team HIT226</p>
+  </footer>
+
+  <script src="reflection.js"></script>
+</body>
+
+</html>

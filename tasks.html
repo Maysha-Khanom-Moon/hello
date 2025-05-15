@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Planner - Tasks</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="tasks-styles.css">
+  <link rel="stylesheet" href="dark-mode.css">
+</head>
+
+<body>
+  <header>
+    <h1>📚 Study Planner Dashboard</h1>
+    <button id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle Dark Mode">🌙</button>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
+      <li><a href="add.html">Add Task</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="tasks-section">
+      <h2>📝 All Tasks</h2>
+      <div id="tasks-list" class="tasks-list">
+        <!-- Rendered via JS -->
+      </div>
+      <p id="no-tasks-msg" class="no-tasks">No tasks added yet.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2025 Study Planner App - Team HIT226</p>
+  </footer>
+
+  <script src="tasks.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#darkModeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #1976d2;
+    transition: color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    color: #145ea8;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode nav {
+    background-color: #1e1e1e;
+    border-bottom-color: #333;
+}
+
+.dark-mode nav a {
+    color: #90caf9;
+}
+
+.dark-mode .summary-cards .card,
+.dark-mode main section {
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .navigation-section .action-card {
+    background-color: #388e3c;
+    color: #dcedc8;
+}
+
+.dark-mode .navigation-section .action-card a {
+    color: white;
+}
+
+.dark-mode footer {
+    border-top-color: #333;
+    color: #aaa;
+}
+
+.dark-mode .task-card {
+    background-color: rgb(51, 60, 54);
+}
+
+.dark-mode .task-card .due, .dark-mode .quote-section blockquote {
+    color: #90caf9;
+}

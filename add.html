@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Planner - Add Task</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="add-style.css">
+  <link rel="stylesheet" href="dark-mode.css">
+</head>
+
+<body>
+  <header>
+    <h1>📚 Study Planner Dashboard</h1>
+    <button id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle Dark Mode">🌙</button>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
+      <li><a href="add.html">Add Task</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="addtask-section">
+      <h2>➕ Add New Task</h2>
+      <form id="add-task-form">
+        <div class="form-group">
+          <label for="task-title">Title</label>
+          <input type="text" id="task-title" required />
+        </div>
+        <div class="form-group">
+          <label for="task-subject">Subject</label>
+          <input type="text" id="task-subject" required />
+        </div>
+        <div class="form-group">
+          <label for="task-due">Due Date</label>
+          <input type="date" id="task-due" />
+        </div>
+        <div class="form-group">
+          <label for="task-priority">Priority</label>
+          <select id="task-priority">
+            <option value="Low">Low</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="High">High</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Add Task</button>
+      </form>
+      <p id="success-msg" class="success-msg">Task added successfully!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p> 2025 Study Planner App - Team HIT226</p>
+  </footer>
+
+  <script src="add.js"></script>
+</body>
+
+</html>

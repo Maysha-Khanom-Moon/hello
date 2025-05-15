@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Planner - Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dark-mode.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>📚 Study Planner Dashboard</h1>
+      <button id="darkModeToggle" aria-label="Toggle dark mode" title="Toggle Dark Mode">🌙</button>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="tasks.html">Tasks</a></li>
+        <li><a href="add.html">Add Task</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Welcome Section -->
+      <section class="welcome-section">
+        <p id="welcome-message">Welcome!</p>
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <button class="btn" id="saveNameBtn">Save Name</button>
+      </section>
+
+      <!-- Summary Section -->
+      <section class="summary-section">
+        <h2>📊 Task Summary</h2>
+        <div class="summary-cards">
+          <div class="card">
+            <p>✅ Completed Tasks</p>
+            <h3 id="done-count">0</h3>
+          </div>
+          <div class="card">
+            <p>🕓 Pending Tasks</p>
+            <h3 id="pending-count">0</h3>
+          </div>
+          <div class="card">
+            <p>🎯 Completion Rate</p>
+            <h3 id="percent-complete">0%</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Actions -->
+      <section class="navigation-section">
+        <h2>🚀 Quick Actions</h2>
+        <div class="nav-cards">
+          <div class="card action-card">
+            <a href="tasks.html">View Tasks</a>
+          </div>
+          <div class="card action-card">
+            <a href="add.html">Add New Task</a>
+          </div>
+          <div class="card action-card">
+            <a href="reflection.html">Write Reflection</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quote Section -->
+      <section class="quote-section">
+        <h2>💡 Quote of the Day</h2>
+        <blockquote id="quote-text">Loading...</blockquote>
+      </section>
+
+      <!-- Deadlines Section -->
+      <section class="deadline-section">
+        <h2>📅 Upcoming Deadlines</h2>
+        <ul id="deadline-list" class="deadline-list">
+          <!-- Populated via JS -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>2025 Study Planner App - Team HIT226</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
