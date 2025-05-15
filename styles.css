@@ -14,10 +14,23 @@ body {
 
 header {
   text-align: center;
+  padding: 20px 0;
 }
 
 header h1 {
   font-size: 2.2rem;
+}
+
+#darkModeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #1976d2;
+  transition: color 0.3s ease;
 }
 
 /* Sticky navigation */
