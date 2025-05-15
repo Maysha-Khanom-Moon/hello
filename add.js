@@ -1,5 +1,13 @@
 const toggleBtn = document.getElementById('darkModeToggle');
 
+
+// Load dark mode state on page load
+if (localStorage.getItem('darkMode') === 'enabled') {
+  document.body.classList.add('dark-mode');
+  toggleBtn.textContent = '☀️'; // Set icon to sun
+}
+
+
 // Toggle dark mode on click
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
