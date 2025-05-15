@@ -74,6 +74,14 @@
   font-size: medium;
 }
 
+.btn-container button {
+  margin-right: 8px;
+}
+
+.btn-container .cancel-task {
+  background-color: salmon;
+}
+
 .no-tasks {
   text-align: center;
   color: #666;
