@@ -63,6 +63,10 @@
     color: #90caf9;
 }
 
+.dark-mode p {
+    font: bold;
+}
+
 .dark-mode {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
