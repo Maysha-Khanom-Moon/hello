@@ -52,6 +52,12 @@ nav a:hover {
   text-decoration: underline;
 }
 
+#nameInput {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 main section {
   background: white;
   margin: 20px auto;
