@@ -163,6 +163,11 @@ footer {
     margin-bottom: 10px;
   }
 
+  header #darkModeToggle {
+    font-size: 1rem;
+    top: 14px;
+  }
+
   nav ul {
     font-size: 0.7rem;
     flex-direction: row;
