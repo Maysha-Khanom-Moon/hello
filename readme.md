@@ -1,12 +1,9 @@
----
-
 # 📚 Study Planner Web Application
 
 ## 🧩 Overview
 
 The **Study Planner** is a multi-page, responsive web application created for university students to help them manage tasks, reflect weekly, and monitor their academic progress. Built with **HTML, CSS, and JavaScript**, it uses `localStorage` for data persistence, ensuring offline access and data privacy.
 
----
 
 ## ✅ Features
 
@@ -16,7 +13,6 @@ The **Study Planner** is a multi-page, responsive web application created for un
 * 💬 **Random Motivation**: Refresh for a new quote on each load.
 * 🌐 **Responsive Design**: Optimized for both desktop and mobile screens.
 
----
 
 ## 🔍 User Testing Summary
 
@@ -40,7 +36,6 @@ The **Study Planner** is a multi-page, responsive web application created for un
 | Header too big on mobile | All Pages  | "Title takes too much space"         | ✅ Fixed    |
 | Nav bar not sticky       | All Pages  | "I want the menu to stay"            | ✅ Fixed |
 
----
 
 ## 🎨 Design Patterns
 
@@ -48,7 +43,6 @@ The **Study Planner** is a multi-page, responsive web application created for un
 * **Flexbox**: Responsive layout for all screen sizes.
 * **Navigation**: Sticky top menu with page highlighting.
 
----
 
 ## 💡 UX Principles
 
@@ -72,7 +66,6 @@ The **Study Planner** is a multi-page, responsive web application created for un
 * ✅ Desirable: Emojis and colors
 * ✅ Valuable: Saves time and stress
 
----
 
 ## ♿ Accessibility Testing
 
@@ -100,7 +93,6 @@ The **Study Planner** is a multi-page, responsive web application created for un
 * Structured headings (h1 → h3)
 * Repaired links
 
----
 
 ## 📁 Project Structure
 
@@ -121,7 +113,6 @@ The **Study Planner** is a multi-page, responsive web application created for un
 ├── README.md
 ```
 
----
 
 ## 🗂 Progress Tracker
 
@@ -139,7 +130,6 @@ The **Study Planner** is a multi-page, responsive web application created for un
 | Add dark/light mode               | All        | ✅ Completed |
 | Split JS into modules             | All        | ✅ Completed |
 
----
 
 ## 💻 Key Code Snippets
 
@@ -250,7 +240,6 @@ nav {
 }
 ```
 
----
 
 ## 📝 Acknowledgements
 
@@ -258,7 +247,4 @@ nav {
 * Quote functionality referenced from **Stack Overflow**
 * `localStorage` and form validation guidance from **W3Schools**
 * Emojis and Unicode icons used throughout the UI
-
----
-
  
