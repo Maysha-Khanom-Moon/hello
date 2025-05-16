@@ -82,7 +82,7 @@ The **Study Planner** is a multi-page, responsive web application created for un
 | Area           | Score | Notes                            |
 | -------------- | ----- | -------------------------------- |
 | Performance    | 100   | Fast load times                  |
-| Accessibility  | 93    | Minor label & contrast issues    |
+| Accessibility  | 95    | Minor label & contrast issues    |
 | Best Practices | 100   | Clean code, no issues            |
 | SEO            | 90    | Heading order improvement needed |
 

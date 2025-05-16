@@ -7,6 +7,7 @@ if (localStorage.getItem('darkMode') === 'enabled') {
 }
 
 // Toggle dark mode on click
+// Md Modasser Hossain (S375173)
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 
@@ -21,11 +22,13 @@ toggleBtn.addEventListener('click', () => {
 
 
 // Utility: get tasks array from localStorage
+// Khaja Shoeb Ahmed Mohammad (S370024)
 function getTasks() {
   return JSON.parse(localStorage.getItem('tasks') || '[]');
 }
 
 // Save and show user name
+// Khaja Shoeb Ahmed Mohammad (S370024)
 function saveName() {
   const nameInput = document.getElementById('nameInput');
   const name = nameInput.value.trim();
@@ -36,6 +39,7 @@ function saveName() {
 }
 
 // Render welcome message
+// Minhaz Uddin Ahmed Mayaz (S378194)
 function renderName() {
   const storedName = localStorage.getItem('userName');
   const welcomeMessage = document.getElementById('welcome-message');
@@ -49,6 +53,7 @@ function renderName() {
 }
 
 // Load and render task summary
+// Minhaz Uddin Ahmed Mayaz (S378194)
 function renderSummary() {
   const tasks = getTasks();
   const doneCount = tasks.filter(t => t.status === 'Completed').length;
@@ -62,6 +67,7 @@ function renderSummary() {
 }
 
 // Render upcoming deadlines
+// Minhaz Uddin Ahmed Mayaz (S378194)
 function renderDeadlines() {
   const tasks = getTasks()
     .filter(t => t.due)
@@ -90,6 +96,7 @@ function renderDeadlines() {
 }
 
 // Load random quote
+// Minhaz Uddin Ahmed Mayaz (S378194)
 function loadQuote() {
   const quotes = [
     "Push yourself, because no one else is going to do it for you.",

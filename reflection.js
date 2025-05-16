@@ -7,6 +7,7 @@ if (localStorage.getItem('darkMode') === 'enabled') {
 }
 
 // Toggle dark mode on click
+// Md Modasser Hossain (S375173)
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 
@@ -25,16 +26,19 @@ toggleBtn.addEventListener('click', () => {
 let editingWeek = null;
 
 // Get reflections object from localStorage
+// Khaja Shoeb Ahmed Mohammad (S370024)
 function getReflections() {
   return JSON.parse(localStorage.getItem('reflections') || '{}');
 }
 
 // Save reflections object to localStorage
+// Khaja Shoeb Ahmed Mohammad (S370024)
 function saveReflections(reflections) {
   localStorage.setItem('reflections', JSON.stringify(reflections));
 }
 
 // Delete reflection by week
+// Md Modasser Hossain (S375173)
 function deleteReflection(week) {
   const reflections = getReflections();
   if (confirm('Are you sure you want to delete this reflection?')) {
@@ -45,6 +49,7 @@ function deleteReflection(week) {
 }
 
 // Edit reflection: populate form with existing data
+// Ravi Kumar Kurmi (S372447)
 function editReflection(week) {
   const reflections = getReflections();
   document.getElementById('reflection-week').value = week;
@@ -56,6 +61,7 @@ function editReflection(week) {
 }
 
 // Render all saved reflections
+// Minhaz Uddin Ahmed Mayaz (S378194)
 function renderReflections() {
   const reflections = getReflections();
   const container = document.getElementById('reflections-container');
@@ -96,6 +102,7 @@ function renderReflections() {
 }
 
 // Handle form submission: save or update reflection
+// Khaja Shoeb Ahmed Mohammad (S370024)
 document.getElementById('reflection-form').addEventListener('submit', function (event) {
   event.preventDefault();
 

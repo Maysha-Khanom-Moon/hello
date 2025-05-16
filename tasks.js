@@ -7,6 +7,7 @@ if (localStorage.getItem('darkMode') === 'enabled') {
 }
 
 // Toggle dark mode on click
+// Md Modasser Hossain (S375173)
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 
@@ -31,6 +32,7 @@ function saveTasks(tasks) {
 }
 
 // Add delete button functionality
+// Md Modasser Hossain (S375173)
 function deleteTask(index) {
   const tasks = getTasks();
   if (confirm('Are you sure you want to delete this task?')) {
@@ -41,6 +43,7 @@ function deleteTask(index) {
 }
 
 // Render all tasks
+// Minhaz Uddin Ahmed Mayaz (S378194)
 function renderTasks() {
   const tasks = getTasks();
   const container = document.getElementById('tasks-list');
@@ -122,6 +125,7 @@ function renderTasks() {
     }
 
     // Delete button
+    // Md Modasser Hossain (S375173)
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
     deleteBtn.className = 'delete-task';
@@ -134,6 +138,7 @@ function renderTasks() {
     container.appendChild(card);
 
     // Edit button functionality
+    // Ravi Kumar Kurmi (S372447)
     editBtn.addEventListener('click', () => {
       const inEditMode = titleInput.style.display === 'inline-block';
       if (!inEditMode) {

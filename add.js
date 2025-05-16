@@ -9,6 +9,7 @@ if (localStorage.getItem('darkMode') === 'enabled') {
 
 
 // Toggle dark mode on click
+// Md Modasser Hossain (S375173)
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 
@@ -23,16 +24,19 @@ toggleBtn.addEventListener('click', () => {
 
 
 // Get existing tasks from localStorage
+// Khaja Shoeb Ahmed Mohammad (S370024)
 function getTasks() {
   return JSON.parse(localStorage.getItem('tasks') || '[]');
 }
 
 // Save tasks array to localStorage
+// Khaja Shoeb Ahmed Mohammad (S370024)
 function saveTasks(tasks) {
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 // Handle form submission
+// Khaja Shoeb Ahmed Mohammad (S370024)
 document.getElementById('add-task-form').addEventListener('submit', function (event) {
   event.preventDefault();
 
