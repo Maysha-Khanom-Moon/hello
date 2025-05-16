@@ -80,8 +80,7 @@ function renderReflections() {
     card.className = 'reflection-card';
 
     const title = document.createElement('h4');
-    const weekLabel = new Date(week + '-1').toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
-    title.textContent = `Week of ${weekLabel}`;
+    title.textContent = `${week}`;
 
     const text = document.createElement('p');
     text.textContent = reflections[week];
